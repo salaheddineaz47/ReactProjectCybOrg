@@ -9,7 +9,7 @@ import { Home, Profile } from "./Pages/index";
 function App() {
   return (
     <div className="container">
-      <Router basename="/react">
+      <Router basename="/ReactProjectCybOrg">
         <Header />
         <Container>
           <Routes>
