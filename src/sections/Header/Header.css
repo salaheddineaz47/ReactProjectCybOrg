@@ -1,0 +1,7 @@
+.activeT {
+  color: var(--color-primary) !important;
+}
+
+#navbar-cyborg {
+  min-height: 100px;
+}

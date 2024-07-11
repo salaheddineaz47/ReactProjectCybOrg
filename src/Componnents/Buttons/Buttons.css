@@ -1,0 +1,56 @@
+.main-button:link,
+.main-button:visited {
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: var(--font-weight-normal);
+  padding: 14px 38px;
+  text-decoration: none;
+  border-radius: var(--border-radius-primary);
+  transition: all 0.2s;
+}
+
+.main-button:hover,
+.main-button:active {
+  background-color: white;
+  color: var(--color-secondary);
+}
+
+.secondary-button:link,
+.secondary-button:visited {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: var(--font-weight-normal);
+  padding: 12px 36px;
+  text-decoration: none;
+  border-radius: var(--border-radius-primary);
+  transition: all 0.2s;
+}
+
+.secondary-button:hover,
+.secondary-button:active {
+  background-color: white;
+  color: var(--color-secondary);
+}
+
+.tertiary-button:link,
+.tertiary-button:visited {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  font-weight: var(--font-weight-normal);
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: var(--border-radius-primary);
+  transition: all 0.2s;
+}
+
+.tertiary-button:active,
+.tertiary-button:hover {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  border: none;
+}

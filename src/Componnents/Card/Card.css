@@ -1,0 +1,53 @@
+.most-popular-item {
+  flex: 1 25%;
+}
+.card-wrapper {
+  padding: calc(var(--padding-primary) / 2);
+  margin: calc(var(--margin-primary) / 5);
+  background-color: var(--color-dark);
+  border-radius: calc(var(--border-radius-primary));
+  color: var(--color-light);
+}
+.most-popular-item-img {
+  border-radius: calc(var(--border-radius-primary) / 2);
+  margin-bottom: calc(var(--margin-primary) / 2);
+  width: 100%;
+}
+
+.most-popular-item-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.most-popular-item-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+}
+.most-popular-item-title span {
+  margin-top: calc(var(--margin-primary) / 4);
+  display: block;
+  color: #666;
+}
+
+.most-popular-item-rank {
+  font-size: 15px;
+  font-weight: var(--font-weight-normal);
+}
+
+.most-popular-item-rank li {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.star-icon,
+.download-icon {
+  font-size: 18px;
+}
+.star-icon {
+  color: yellow;
+  align-self: flex-start;
+}
+.download-icon {
+  color: var(--color-primary);
+}
