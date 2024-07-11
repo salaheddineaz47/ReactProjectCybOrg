@@ -1,2 +1,238 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap);h1{background-color:#ff0;color:brown}:root{--color-dark:#27292a;--color-darkest:#1f2122;--color-light:#fff;--color-primary:#ec6090;--color-secondary:#e75e8d;--color-bg-body:var(--color-darkest);--distance-primary:50px;--padding-primary:var(--distance-primary);--margin-primary:var(--distance-primary);--border-radius-primary:calc(var(--distance-primary)/2);--font-weight-bold:700;--font-weight-normal:300;--font-family-primary:"Poppins",sans-serif}*{box-sizing:border-box;margin:0;padding:0}body{background-color:#1f2122;background-color:var(--color-bg-body);font-family:Poppins,sans-serif;font-family:var(--font-family-primary)}ul{list-style-type:none}a{text-decoration:none}#main-container{background-color:var(--color-dark);border-radius:var(--border-radius-primary);color:wheat;padding:var(--padding-primary)}.most-popular-item{flex:1 1 25%}.card-wrapper{background-color:var(--color-dark);border-radius:calc(var(--border-radius-primary));color:var(--color-light);margin:calc(var(--margin-primary)/5);padding:calc(var(--padding-primary)/2)}.most-popular-item-img{border-radius:calc(var(--border-radius-primary)/2);margin-bottom:calc(var(--margin-primary)/2);width:100%}.most-popular-item-content{display:flex;justify-content:space-between}.most-popular-item-title{font-size:14px;font-weight:var(--font-weight-bold)}.most-popular-item-title span{color:#666;display:block;margin-top:calc(var(--margin-primary)/4)}.most-popular-item-rank{font-size:15px;font-weight:var(--font-weight-normal)}.most-popular-item-rank li{align-items:flex-end;display:flex;gap:5px}.download-icon,.star-icon{font-size:18px}.star-icon{align-self:flex-start;color:#ff0}.download-icon{color:var(--color-primary)}.section-header h4 span{color:var(--color-light);text-decoration:underline}.section-header h4{color:var(--color-primary);font-size:35px;font-weight:var(--font-weight-bold)}.section-header{margin-bottom:calc(var(--margin-primary)/2)}.section-wrapper{background-color:var(--color-darkest);border-radius:var(--border-radius-primary);margin-top:var(--margin-primary);padding:calc(var(--padding-primary));position:relative!important}.gaming-library-item ul{border-bottom:1px solid var(--color-dark);color:var(--color-light);display:flex;justify-content:space-between;padding:calc(var(--margin-primary)/2) 0}.gaming-library-item ul li{flex:1 1 16%}.gaming-library-item-img img{border-radius:calc(var(--border-radius-primary)/2);width:100px}.gaming-library-item ul li h6{font-weight:var(--font-weight-bold)}.gaming-library-item ul li span{color:#666;font-size:14px}.main-button:link,.main-button:visited{background-color:var(--color-secondary);border-radius:var(--border-radius-primary);color:#fff;font-weight:var(--font-weight-normal);padding:14px 38px;text-decoration:none;transition:all .2s}.main-button:active,.main-button:hover{background-color:#fff;color:var(--color-secondary)}.secondary-button:link,.secondary-button:visited{background-color:var(--color-secondary);border-radius:var(--border-radius-primary);bottom:-22px;color:#fff;font-weight:var(--font-weight-normal);left:50%;padding:12px 36px;position:absolute;text-decoration:none;transform:translateX(-50%);transition:all .2s}.secondary-button:active,.secondary-button:hover{background-color:#fff;color:var(--color-secondary)}.tertiary-button:link,.tertiary-button:visited{background-color:initial;border:1px solid var(--color-secondary);border-radius:var(--border-radius-primary);color:var(--color-secondary);font-weight:var(--font-weight-normal);padding:12px 32px;text-decoration:none;transition:all .2s}.tertiary-button:active,.tertiary-button:hover{background-color:var(--color-light);border:none;color:var(--color-secondary)}.activeT{color:var(--color-primary)!important}#navbar-cyborg{min-height:100px}footer p{font-weight:300;padding:30px 0;text-align:center}footer a,footer p{color:var(--color-light)}footer a{transition:all .2s}footer a:hover{color:var(--color-secondary)}.hero-main{background:url(/ReactProjectCybOrg/static/media/banner-bg.f41cb78948354a14694e.jpg) no-repeat 50%/cover;background-color:var(--color-dark);border-radius:var(--border-radius-primary);color:#fff;min-height:380px;padding:var(--padding-primary)}.hero-text{max-width:600px}.hero-subtitle{font-size:20px;font-weight:var(--font-weight-normal)}.hero-subtitle,.hero-title{margin-bottom:calc(var(--margin-primary)/2)}.hero-title{font-size:60px;font-weight:var(--font-weight-bold);text-transform:uppercase}.hero-title em{color:var(--color-primary);font-style:normal}.most-popular-items{display:flex;flex-wrap:wrap;justify-content:space-between}
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap);
+h1 {
+  background-color: #ff0;
+  color: brown;
+}
+:root {
+  --color-dark: #27292a;
+  --color-darkest: #1f2122;
+  --color-light: #fff;
+  --color-primary: #ec6090;
+  --color-secondary: #e75e8d;
+  --color-bg-body: var(--color-darkest);
+  --distance-primary: 50px;
+  --padding-primary: var(--distance-primary);
+  --margin-primary: var(--distance-primary);
+  --border-radius-primary: calc(var(--distance-primary) / 2);
+  --font-weight-bold: 700;
+  --font-weight-normal: 300;
+  --font-family-primary: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1f2122;
+  background-color: var(--color-bg-body);
+  font-family: Poppins, sans-serif;
+  font-family: var(--font-family-primary);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+#main-container {
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-primary);
+  color: wheat;
+  padding: var(--padding-primary);
+}
+.most-popular-item {
+  flex: 1 1 25%;
+}
+.card-wrapper {
+  background-color: var(--color-dark);
+  border-radius: calc(var(--border-radius-primary));
+  color: var(--color-light);
+  margin: calc(var(--margin-primary) / 5);
+  padding: calc(var(--padding-primary) / 2);
+}
+.most-popular-item-img {
+  border-radius: calc(var(--border-radius-primary) / 2);
+  margin-bottom: calc(var(--margin-primary) / 2);
+  width: 100%;
+}
+.most-popular-item-content {
+  display: flex;
+  justify-content: space-between;
+}
+.most-popular-item-title {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+.most-popular-item-title span {
+  color: #666;
+  display: block;
+  margin-top: calc(var(--margin-primary) / 4);
+}
+.most-popular-item-rank {
+  font-size: 15px;
+  font-weight: var(--font-weight-normal);
+}
+.most-popular-item-rank li {
+  align-items: flex-end;
+  display: flex;
+  gap: 5px;
+}
+.download-icon,
+.star-icon {
+  font-size: 18px;
+}
+.star-icon {
+  align-self: flex-start;
+  color: #ff0;
+}
+.download-icon {
+  color: var(--color-primary);
+}
+.section-header h4 span {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+.section-header h4 {
+  color: var(--color-primary);
+  font-size: 35px;
+  font-weight: var(--font-weight-bold);
+}
+.section-header {
+  margin-bottom: calc(var(--margin-primary) / 2);
+}
+.section-wrapper {
+  background-color: var(--color-darkest);
+  border-radius: var(--border-radius-primary);
+  margin-top: var(--margin-primary);
+  padding: calc(var(--padding-primary));
+  position: relative !important;
+}
+.gaming-library-item ul {
+  border-bottom: 1px solid var(--color-dark);
+  color: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--margin-primary) / 2) 0;
+}
+.gaming-library-item ul li {
+  flex: 1 1 16%;
+}
+.gaming-library-item-img img {
+  border-radius: calc(var(--border-radius-primary) / 2);
+  width: 100px;
+}
+.gaming-library-item ul li h6 {
+  font-weight: var(--font-weight-bold);
+}
+.gaming-library-item ul li span {
+  color: #666;
+  font-size: 14px;
+}
+.main-button:link,
+.main-button:visited {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius-primary);
+  color: #fff;
+  font-weight: var(--font-weight-normal);
+  padding: 14px 38px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.main-button:active,
+.main-button:hover {
+  background-color: #fff;
+  color: var(--color-secondary);
+}
+.secondary-button:link,
+.secondary-button:visited {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius-primary);
+  bottom: -22px;
+  color: #fff;
+  font-weight: var(--font-weight-normal);
+  left: 50%;
+  padding: 12px 36px;
+  position: absolute;
+  text-decoration: none;
+  transform: translateX(-50%);
+  transition: all 0.2s;
+}
+.secondary-button:active,
+.secondary-button:hover {
+  background-color: #fff;
+  color: var(--color-secondary);
+}
+.tertiary-button:link,
+.tertiary-button:visited {
+  background-color: initial;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius-primary);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-normal);
+  padding: 12px 32px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.tertiary-button:active,
+.tertiary-button:hover {
+  background-color: var(--color-light);
+  border: none;
+  color: var(--color-secondary);
+}
+.activeT {
+  color: var(--color-primary) !important;
+}
+#navbar-cyborg {
+  min-height: 100px;
+}
+footer p {
+  font-weight: 300;
+  padding: 30px 0;
+  text-align: center;
+}
+footer a,
+footer p {
+  color: var(--color-light);
+}
+footer a {
+  transition: all 0.2s;
+}
+footer a:hover {
+  color: var(--color-secondary);
+}
+.hero-main {
+  background: url(/ReactProjectCybOrg/static/media/banner-bg.f41cb78948354a14694e.jpg)
+    no-repeat 50% / cover;
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-primary);
+  color: #fff;
+  min-height: 380px;
+  padding: var(--padding-primary);
+}
+.hero-text {
+  max-width: 600px;
+}
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: var(--font-weight-normal);
+}
+.hero-subtitle,
+.hero-title {
+  margin-bottom: calc(var(--margin-primary) / 2);
+}
+.hero-title {
+  font-size: 60px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+.hero-title em {
+  color: var(--color-primary);
+  font-style: normal;
+}
+.most-popular-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /*# sourceMappingURL=main.95f472ee.css.map*/
